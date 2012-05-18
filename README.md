@@ -18,8 +18,8 @@ Add to Django _settings.py_:
 
 Finally, create a _googlebot_ user. This account will be used when Googlebot is automatically logged in.
 
-NB Remember to create a _robots.txt_ with _Noarchive_ if you wish to disable the Google Cache feature. Eg:
+NB If you wish to disable the Google Cache feature, create a _robots.txt_ with _Noarchive_ . Eg:
 
     User-agent: *
     Disallow:
-    Noarchive: /download/
+    Noarchive: /restricted-content/
