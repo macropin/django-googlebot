@@ -1,4 +1,4 @@
-# Allow Googlebot to access and index restricted content
+# Allow Googlebot to index restricted content
 
 Django Middleware to allow Googlebot access to paywalled, or login only content. 
 This Django middleware automatically logs in Googlebot as the _googlebot_ user.
@@ -16,6 +16,7 @@ Add to Django _settings.py_:
         'googlebot.middleware.GooglebotMiddleware',
     )
 
+Finally, create a _googlebot_ user. This account will be used when Googlebot is automatically logged in.
 
 NB Remeber to create a _robots.txt_ with _Noarchive_ if you wish to disable the Google Cache feature. Eg:
 
