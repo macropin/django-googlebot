@@ -1,4 +1,4 @@
-# Allow Googlebot to index restricted content
+# Django middleware to allow googlebot to index logged-in accessible content
 
 Django Middleware to allow Googlebot access to paywalled, or login only content. 
 This Django middleware automatically logs in Googlebot as the _googlebot_ user.
@@ -7,7 +7,7 @@ This Django middleware automatically logs in Googlebot as the _googlebot_ user.
 
 Add to your system / virtualenv:
 
-    pip install -e git+git://github.com/macropin/django-googlebot#egg=django-googlebot
+    pip install git+git://github.com/macropin/django-googlebot#egg=django-googlebot
 
 Add to Django _settings.py_:
 
