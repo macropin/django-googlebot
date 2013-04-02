@@ -7,7 +7,7 @@ This Django middleware automatically logs in Googlebot as the _googlebot_ user.
 
 Add to your system / virtualenv:
 
-    pip install git+git://github.com/macropin/django-googlebot#egg=django-googlebot
+    pip install git+git://github.com/cyeong/django-googlebot#egg=django-googlebot
 
 Add to Django _settings.py_:
 
