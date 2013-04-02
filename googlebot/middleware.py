@@ -17,7 +17,7 @@ class GooglebotMiddleware(object):
                     hostname = socket.gethostbyaddr(remote_ip)[0]
 
                     if hostname.endswith('googlebot.com'):
-                        request.user = User.objects.get_or_create(username='googlebot') # login our googlebot user :)
+                        request.user, created = User.objects.get_or_create(username='googlebot') # login our googlebot user :)
                         request.is_googlebot = True
                     else:
                         # FAKE googlebot!!!!
