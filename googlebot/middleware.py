@@ -24,6 +24,6 @@ class GooglebotMiddleware(object):
                             # FAKE googlebot!!!!
                             request.is_googlebot = False
 
-                    except Exception, e:
+                    except Exception:
                         pass # Don't bring down the site
         return None
